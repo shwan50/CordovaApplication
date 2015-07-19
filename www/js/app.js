@@ -9,6 +9,14 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 url: '/',
         templateUrl: 'views/home.html'
     })
+            
+            .state('afterHome',{
+                url: '/afterHome',
+        templateUrl: 'views/afterHome.html',
+        controller: 'ahcontrl'
+            })
+    
+    
     
             .state('explore', {
                 url: '/explore',
@@ -34,4 +42,13 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/");
 });
 
+
+app.controller('ahcontrl', function($scope){
+    $scope.$on('$ionicView.enter', function(){
+        var country = window.localStorage['country'] || 'Ireland';
+        document.getElementById('AFTERHOME_countrySPAN').innerHTML = country;
+        var city = window.localStorage['city'] || 'Cork';
+        document.getElementById('AFTERHOME_citySPAN').innerHTML = city;
+    });
+});
 
