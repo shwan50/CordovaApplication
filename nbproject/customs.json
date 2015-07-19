@@ -1,0 +1,41 @@
+{
+    "attributes": {
+        "ui-sref": {
+            "context": "a"
+        }
+    },
+    "elements": {
+        "ion-nav-back-button": {
+            "attributes": {
+                "ng-click": {},
+                "class": {}
+            }
+        },
+        "ion-header-bar": {
+            "attributes": {
+                "class": {}
+            }
+        },
+        "ion-view": {
+            "attributes": {
+                "class": {},
+                "view-title": {}
+            }
+        },
+        "ion-pane": {},
+        "ion-nav-view": {},
+        "ion-nav-title": {},
+        "ion-content": {
+            "attributes": {
+                "class": {}
+            }
+        },
+        "ion-nav-bar": {
+            "attributes": {
+                "class": {},
+                "ng-controller": {},
+                "align-title": {}
+            }
+        }
+    }
+}
